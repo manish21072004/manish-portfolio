@@ -28,7 +28,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 1;
 
 }
 #menu-icon{
@@ -337,23 +337,24 @@ section{
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center;
-  padding: 5rem;
+  /* align-items: center; */
+  padding: 2rem;
 }
 .skilles-info h4{
   font-size: 4rem;
   margin: 2rem 0;
   font-weight: 800;
 }
-.skilles-info ul li{
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 1.7;
-  color: white;
-  text-align: start;
+.skilles-info p {
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+    line-height: 29px;
+    text-align: start;
 }
 .skilles-info i{
-  font-size: 8rem;
+  font-size: 80px;
 }
 
 /* project */
@@ -369,16 +370,17 @@ section{
 
 
 .carousel-container {
-  position: relative;
-  width: 400px;
-  height: 500px;
-  perspective: 1000px;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    margin-left: 30%;
 }
 
 .carousel {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 76vh;
 }
 
 .card {
@@ -558,7 +560,7 @@ section{
 }
 
 /* footer */
-.footer{
+/* .footer{
   background-color: #101010;
   padding: 10px 0;
 }
@@ -569,10 +571,120 @@ section{
   text-align: center;
   margin-top: 10px;
   font-size: 16px;
+} */
+
+/* footer */
+
+/* .main{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  min-height: 100vh;
+  background-color: black;
+} */
+
+footer{
+  position: relative;
+  width: 100%;
+  background:rgb(41, 41, 41) ;
+  min-height: 100x;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
+footer.social_icon, footer.menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social_icon a,footer .menu a{
+  list-style: none;
+}
 
-/* day /night */
+/* footer .social_icon  a{
+ display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0.7rem;
+  background: transparent;
+  border: 2px solid black ;
+  border-radius: 50%;
+  color: black;
+  margin: 1rem 0.5rem;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+footer .social_icon  a :hover{
+    color: white;
+  background-color: black;
+  transform: scale(1.2)translateY(-10px);
+  box-shadow: 0 0 25px black;
+} */
+
+.footer-contant a{
+  font-size: 1.6rem;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75s;
+  
+}
+.footer-contant{
+margin-left: 33%;
+}
+
+.footer-contant :hover{
+  opacity: 1;
+}
+
+footer p{
+  color: white;
+  text-align: center;
+  margin: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px; background: black url(/images/wave-removebg-preview.png);
+  background-size: 1000px 169px;
+}
+
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewave 3s linear infinite;
+}
+
+.footer-icon{
+  margin-left: 43%;
+  margin-bottom: 15px;
+}
+
+@keyframes animatewave {
+  0%{
+    background-position-x: 0px ;
+  }
+
+  100%{
+    background-position-x: 1000px ;
+  }
+  
+
+}
 
 
 
@@ -720,6 +832,11 @@ section {
     height: auto;
     padding: 2rem 1rem;
   }
+  .skilles-info p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+}
 
   /* PROJECT */
   .carousel-container {
@@ -728,6 +845,13 @@ section {
   }
   .card {
     width: 89%;
+}
+.carousel-container {
+    margin-left: 12%;
+}
+
+.carousel {
+    height: 50vh;
 }
 
   .btn {
@@ -738,7 +862,8 @@ section {
 
   .prev {
     left: -15%;
-  }
+    margin-left: -2px;
+}
 
   .next {
     right: -4%;
@@ -772,11 +897,24 @@ section {
     padding: 2rem;
   }
 
-  /* FOOTER */
-  .footer .copyright {
-    font-size: 1.2rem;
-  }
- 
+/* footer */
+    .footer-contant {
+    margin-left: 0;
+    margin-right: -22px;
+}
+
+footer {
+    padding: 16px 24px;
+}
+
+.footer-contant a {
+    margin: 0 4px;
+}
+
+.footer-icon {
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
 }
 
 
@@ -831,4 +969,16 @@ section {
 
 .carousel .card.active {
   animation: slideIn 0.8s ease;
+}
+
+
+.animate-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
 }
