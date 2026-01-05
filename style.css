@@ -559,30 +559,6 @@ section{
   resize: none;
 }
 
-/* footer */
-/* .footer{
-  background-color: #101010;
-  padding: 10px 0;
-}
-.footer .social-icon{
-  text-align: center;
-}
-.footer .copyright{
-  text-align: center;
-  margin-top: 10px;
-  font-size: 16px;
-} */
-
-/* footer */
-
-/* .main{
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  min-height: 100vh;
-  background-color: black;
-} */
 
 footer{
   position: relative;
